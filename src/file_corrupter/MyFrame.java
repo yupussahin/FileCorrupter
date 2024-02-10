@@ -18,13 +18,19 @@ public class MyFrame extends JFrame implements ActionListener{
 		button = new JButton("Select File");
 		button.addActionListener(this);
 		
+		button2 = new JButton("Corrupt");
+		
 		this.add(button);
+		this.add(button2);
 		this.pack();
 		this.setVisible(true);
 		
 		this.setResizable(false);
-		this.setSize(450, 550);
+		this.setSize(250, 350);
+		this.setLocation(700, 180);
 		
+		Dimension size = button2.getPreferredSize();
+		this.button2.setLocation(100,100);
 		
 	}
 
